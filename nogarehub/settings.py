@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-7v@@ncp-l@*dm3^e0y9=+0=(rbgx4@lh_2*dg-&hri*x$-o0@k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nogarehub.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['nogarehub.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
@@ -69,10 +69,10 @@ WSGI_APPLICATION = 'nogarehub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'table',
-        'USER': 'd7noboee52slfm',
+        'NAME': 'd7noboee52slfm',
+        'USER': 'ehwgrfutelijaw',
         'PASSWORD': '72030615c9eb48671aedc7222bebecee95e77e03e6e72bbe1a3626a3bf893559',
-        'HOST':'ec2-18-214-35-70.compute-1.amazonaws.com',
+        'HOST': 'ec2-18-214-35-70.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -122,6 +122,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
